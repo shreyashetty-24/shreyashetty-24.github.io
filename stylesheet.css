@@ -144,7 +144,7 @@ h2.script { font-size: 2.8rem; }
 }
 .button.light:hover { color: #d1558f; border-color: #d1558f; }
 
-/* ---------- Tiles (class used four times) ---------- */
+/* ---------- Navigation tiles ---------- */
 #tiles {
   display: flex;
   gap: 1.25rem;
@@ -166,8 +166,7 @@ h2.script { font-size: 2.8rem; }
 .tile .bold   { color: #ffffff; font-size: 1.7rem; }
 .tile-1 { background-color: #e6d3ea; }
 .tile-2 { background-color: #d9b9e0; }
-.tile-3 { background-color: #bf98c9; }
-.tile-4 { background-color: #b8a2d6; }
+.tile-3 { background-color: #b8a2d6; }
 .tile:hover { border-color: #3b2f45; color: #ffffff; }
 
 /* ---------- Bands ---------- */
@@ -183,24 +182,6 @@ h2.script { font-size: 2.8rem; }
 }
 .band.tall h2.script { color: #8a63a8; }
 .band.tall p { color: #5d4770; margin: 0.5rem 0 1.5rem; }
-
-/* ---------- Products (class used four times) ---------- */
-#products {
-  display: flex;
-  gap: 1.25rem;
-  padding: 2rem 2.25rem 1rem;
-}
-.product {
-  flex: 1;
-  text-align: center;
-  border: 1px solid #e6d3ea;
-  padding: 0.6rem 0.6rem 1rem;
-  margin: 0;
-}
-.product img { width: 100%; margin-bottom: 0.7rem; }
-.product p { margin: 0; font-size: 0.85rem; color: #7d56a0; }
-
-.center { text-align: center; padding: 1rem 0 2rem; margin: 0; }
 
 /* ---------- About (id) ---------- */
 #about {
@@ -227,8 +208,7 @@ h2.script { font-size: 2.8rem; }
   h1 { font-size: 3rem; }
   #hero, #about { flex-direction: column; padding: 2rem 1.25rem; text-align: center; }
   #hero-img { width: 15rem; }
-  #tiles, #products { flex-wrap: wrap; padding: 1.5rem 1rem; }
+  #tiles { flex-wrap: wrap; padding: 1.5rem 1rem; }
   .tile { flex: 1 1 40%; }
-  .product { flex: 1 1 40%; }
   #nav a { display: inline-block; margin: 0 0.6rem; }
 }
