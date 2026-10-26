@@ -1,0 +1,234 @@
+/* ---------- Palette ----------
+   page pink  #fbf1fb   lavender #e6d3ea   mauve #d3b9de
+   violet #b98cc4       purple   #9b78b5   ink   #3b2f45
+------------------------------ */
+
+/* Tag selector */
+body {
+  font-family: "Cabin", Arial, sans-serif;
+  background-color: #fbf1fb;
+  color: #3b2f45;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 0 3rem;
+}
+
+img { max-width: 100%; display: block; }
+
+/* Tag selector */
+a {
+  color: #7d56a0;
+  text-decoration: none;
+}
+
+/* Hover selector (requirement): links change color on hover */
+a:hover {
+  color: #d1558f;
+}
+
+a:focus-visible {
+  outline: 3px solid #9b78b5;
+  outline-offset: 3px;
+}
+
+/* Type */
+.script { font-family: "Allura", cursive; font-weight: 400; color: #9b78b5; }
+.bold   { font-family: "Abril Fatface", Georgia, serif; color: #b98cc4; }
+
+h1, h2, h3 { margin: 0; font-weight: 400; }
+h1 {
+  font-family: "Abril Fatface", Georgia, serif;
+  font-size: 4.2rem;
+  line-height: 1.05;
+  color: #b98cc4;
+}
+h2 { font-size: 1.6rem; color: #9b78b5; }
+h3 { font-size: 0.95rem; font-weight: 600; color: #3b2f45; }
+h2.script { font-size: 2.8rem; }
+
+/* ---------- Announcement + page frame ---------- */
+#announce {
+  background-color: #e6d3ea;
+  color: #7d56a0;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  padding: 0.6rem 1rem;
+}
+
+#page {
+  max-width: 62rem;
+  margin: 1.5rem auto 0;
+  background-color: #ffffff;
+}
+
+/* ---------- Header + nav ---------- */
+#header {
+  text-align: center;
+  padding: 1.5rem 1rem 1rem;
+}
+#logo { margin: 0; font-size: 2.6rem; line-height: 1.1; }
+#logo .script { font-size: 3.2rem; }
+.subtitle-small {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  color: #9b78b5;
+}
+
+#nav {
+  background-color: #d3b9de;
+  text-align: center;
+  padding: 0.7rem 1rem;
+}
+#nav a {
+  color: #ffffff;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  margin: 0 1rem;
+}
+#nav a:hover { color: #4a2a63; }
+
+/* ---------- Hero (id) ---------- */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #f0e4f4;
+  padding: 2.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+#hero::after {
+  content: "";
+  position: absolute;
+  right: -6rem;
+  bottom: -9rem;
+  width: 28rem;
+  height: 22rem;
+  border-radius: 50%;
+  background-color: #e6d3ea;
+  z-index: 0;
+}
+#hero-text, #hero-img { position: relative; z-index: 1; }
+#hero-text { max-width: 24rem; }
+.big { font-size: 3rem; margin: 0; line-height: 1; }
+.subtitle {
+  margin: 0.75rem 0 1.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  color: #9b78b5;
+}
+#hero-img { width: 20rem; flex-shrink: 0; }
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-block;
+  background-color: #9b78b5;
+  color: #ffffff;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #9b78b5;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #d1558f;
+  border-color: #d1558f;
+}
+.button.light {
+  background-color: #ffffff;
+  color: #7d56a0;
+  border-color: #ffffff;
+}
+.button.light:hover { color: #d1558f; border-color: #d1558f; }
+
+/* ---------- Tiles (class used four times) ---------- */
+#tiles {
+  display: flex;
+  gap: 1.25rem;
+  padding: 2rem 1.75rem;
+}
+.tile {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  border: 3px solid transparent;
+  padding: 1rem;
+}
+.tile .script { color: #ffffff; font-size: 2.2rem; line-height: 1; }
+.tile .bold   { color: #ffffff; font-size: 1.7rem; }
+.tile-1 { background-color: #e6d3ea; }
+.tile-2 { background-color: #d9b9e0; }
+.tile-3 { background-color: #bf98c9; }
+.tile-4 { background-color: #b8a2d6; }
+.tile:hover { border-color: #3b2f45; color: #ffffff; }
+
+/* ---------- Bands ---------- */
+.band {
+  background-color: #e6d3ea;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  margin-top: 1rem;
+}
+.band.tall {
+  padding: 3.5rem 1.5rem;
+  margin: 2rem 0 0;
+}
+.band.tall h2.script { color: #8a63a8; }
+.band.tall p { color: #5d4770; margin: 0.5rem 0 1.5rem; }
+
+/* ---------- Products (class used four times) ---------- */
+#products {
+  display: flex;
+  gap: 1.25rem;
+  padding: 2rem 2.25rem 1rem;
+}
+.product {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #e6d3ea;
+  padding: 0.6rem 0.6rem 1rem;
+  margin: 0;
+}
+.product img { width: 100%; margin-bottom: 0.7rem; }
+.product p { margin: 0; font-size: 0.85rem; color: #7d56a0; }
+
+.center { text-align: center; padding: 1rem 0 2rem; margin: 0; }
+
+/* ---------- About (id) ---------- */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem 3rem 1rem;
+}
+#about img { width: 16rem; flex-shrink: 0; }
+#about-text { max-width: 28rem; }
+#about-text p { margin: 0.75rem 0; }
+
+/* ---------- Footer ---------- */
+#footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #7d56a0;
+  padding: 1.5rem 1rem 0;
+  margin: 0;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 44rem) {
+  h1 { font-size: 3rem; }
+  #hero, #about { flex-direction: column; padding: 2rem 1.25rem; text-align: center; }
+  #hero-img { width: 15rem; }
+  #tiles, #products { flex-wrap: wrap; padding: 1.5rem 1rem; }
+  .tile { flex: 1 1 40%; }
+  .product { flex: 1 1 40%; }
+  #nav a { display: inline-block; margin: 0 0.6rem; }
+}
